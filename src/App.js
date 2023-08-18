@@ -1,8 +1,8 @@
 import { QuizList } from './components/QuizList/QuizList';
 import quizItems from '../data.json'
 import { SearchBar } from "./components/SearchBar/SearchBar";
-import { GlobalStyle } from './components/GlobalStyle';
-import { Layout } from './components/Layout';
+import { GlobalStyle } from './GlobalStyle';
+import { Layout } from './Layout';
 import { HiAcademicCap, HiAdjustments, HiArchive } from 'react-icons/hi';
 import { IconButton } from 'components/IconButton/IconButton';
 

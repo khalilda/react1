@@ -11,7 +11,9 @@ export class StateExample extends Component {
     state = {
         numberOfClics: 0
     };
-    handClick = () => {
+
+
+    handleClick = () => {
     this.setState(prevState => {
         return {
             numberOfClics: prevState.numberOfClics + 1
@@ -19,18 +21,25 @@ export class StateExample extends Component {
     });
     }
 
+
     handleReset = () => {
         this.setState ({
-            numberOfClics: 0;
+            numberOfClics: 0,
         }
         )
     };
+
+
     render() {
         <div style={styles}>
           StateExample
-          <button onClick={this.handClick}>{this.state.numberOfClics}</button>
+          <button onClick={this.handleClick}>{this.state.numberOfClics}</button>
             <button onClick={this.handleReset}>Reset</button>
-          <A />
+          <A 
+            clicks={this.state.numberOfClics} 
+            onIncrement={this.handleClick}
+            onReset={this.handleResetdfffffffffffffffffffffffffffffffffffffffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaw3wwsex          }
+            />
         </div>
       }
 }

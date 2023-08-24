@@ -1,12 +1,12 @@
-import { LevelFilter } from "../../LevelFilter";
-import { TopicFilter } from "../../TopicFilter";
+// import { LevelFilter } from "../../LevelFilter";
+// import { TopicFilter } from "../../TopicFilter";
 import { Wrapper } from './SearchBar.styled';
 
-export const SearchBar = () => {
+export const SearchBar = ({ onReset, children }) => {
     return (
         <Wrapper>
-            <TopicFilter/>
-            <LevelFilter/>
+            {children}
+            <button onClick={onReset}>Reset filters</button>
         </Wrapper>
     );
 };
